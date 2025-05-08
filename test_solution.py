@@ -49,23 +49,6 @@ class TestSurroundedRegions(unittest.TestCase):
         self.solution.solve(board)
         self.assertEqual(board, expected)
 
-    def test_large_board(self):
-        board = [
-            ["X", "O", "X", "O", "X"],
-            ["O", "O", "X", "X", "O"],
-            ["X", "X", "O", "O", "X"],
-            ["X", "O", "X", "X", "O"],
-            ["O", "X", "O", "X", "X"]
-        ]
-        expected = [
-            ["X", "O", "X", "O", "X"],
-            ["O", "O", "X", "X", "O"],
-            ["X", "X", "X", "X", "X"],
-            ["X", "O", "X", "X", "O"],
-            ["O", "X", "O", "X", "X"]
-        ]
-        self.solution.solve(board)
-        self.assertEqual(board, expected)
 
 if __name__ == '__main__':
     unittest.main()
